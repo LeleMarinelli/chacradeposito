@@ -1,0 +1,137 @@
+.carruselcontainer{
+
+    .carruselgrande{
+
+    .container-slide {
+            width: 1200px;
+            text-align: left;
+            padding-left: 20px;
+    }
+
+    .slide1{
+        p:first-child{
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: -15px;
+        // margin-left: 20px;
+        text-shadow: 2px 2px #171e6f;
+        }
+
+        h3{
+        font-weight: 700;
+        font-size: 80px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 5px #000000;
+        }
+        .chacranoboldcarrusel {
+        font-weight: 400;
+        font-size: 50px;
+        margin-top: -15px;
+        letter-spacing: 14px;
+        }
+
+        p {
+        font-size: 20px;
+        text-shadow: 1px 1px 5px #000000;
+        margin-bottom: 50px;
+        }
+
+    }
+
+    .slide2{
+        
+        h3{
+        font-weight: 700;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 5px #000000;
+        }
+        p {
+        
+        font-size: 24px;
+        text-shadow: 1px 1px 3px #000000;
+        margin-bottom: 30px;
+        }
+
+    }
+        
+}
+}
+
+@media (min-width: 600px) {
+    .carruselchico {
+            display: none;
+        }
+}
+
+
+@media (max-width: 991px) {
+    .carruselgrande{
+        display: none;
+    }
+    .carruselchico {
+        display:block;
+    }
+        .carruselcontainer {
+
+           
+            
+                .slide1 {
+
+                    .container-slide{
+                   padding-top: 200px;
+                }
+                
+                    p:first-child { 
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: 700;
+                        text-shadow: 2px 2px #171e6f;
+                        // padding-bottom: 30px;
+
+                    }
+        
+                    h3 {
+                        font-weight: 700;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        text-shadow: 1px 1px 5px #000000;
+                        // display: hide;
+                        
+
+                    }
+        
+                    .chacranoboldcarrusel {
+                        font-weight: 500;
+                        font-size: 30px;
+                        margin-top: -3px;
+                        letter-spacing: 0px;
+                    }
+        
+                    p {
+                        font-size: 20px;
+                        text-shadow: 1px 1px 5px #000000;
+                        margin-bottom: 50px;
+                    }
+        
+                }
+        
+                .slide2 {
+        
+                    h3 {
+                        display: none;
+                    }
+        
+                    p {
+        
+                        font-size: 20px;
+                        text-shadow: 1px 1px 3px #000000;
+                        margin-bottom: 30px;
+                    }
+        
+                }}
+
+  }

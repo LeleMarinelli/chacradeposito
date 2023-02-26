@@ -1,0 +1,156 @@
+.beneficios{
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+    text-align: center;
+    padding: 30px 0 20px 0;
+    border-bottom: 15px solid rgb(40, 143, 222);
+    border-top: 15px solid rgb(40, 143, 222);
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+
+    h3{
+        font-size: 2.5em;
+        text-transform:uppercase;
+        font-weight: 700;
+        color: rgb(202, 202, 202);
+    }
+          .containerBeneficios {
+            display: flex;
+            flex-direction: row;
+            padding: 30px 200px 20px 200px;
+            flex-wrap: wrap;
+           
+                
+            .cardBeneficios {
+                width: 31%;
+                margin: 10px auto 10px;
+                // border: 2px solid rgb(82, 82, 82);
+                color: rgb(154, 152, 152);
+       
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+    
+                h4 {
+                    font-weight: 700;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-size: 22px;
+                }
+    
+                p {
+                    padding: 0 20px 0 20px;
+                }
+    
+                .icon {
+                    font-size: 80px;
+                }
+
+                &:hover{
+                    color: rgb(40, 143, 222);
+                }
+            }
+        }
+}
+
+@media (max-width: 649.99px) {
+    .beneficios {
+         border-bottom: 15px solid rgb(40, 143, 222);
+
+        h3{
+            padding: 10px 20px 30px 20px;
+            color: rgb(40, 143, 222);
+            font-size: 2em;
+        }
+
+        .containerBeneficios {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 10px 0px 10px;
+
+            .cardBeneficios {
+                width: 100%;
+                margin: 20px auto 20px;
+                color: rgb(154, 152, 152);
+
+                flex-direction: column;
+
+                h4 {
+                    font-weight: 700;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    }
+
+@media (min-width: 650px) and (max-width: 1000px) {
+    .beneficios {
+        border-bottom: 15px solid rgb(40, 143, 222);
+
+        h3 {
+            padding: 10px 20px 30px 20px;
+            color: rgb(40, 143, 222);
+        }
+
+        .containerBeneficios {
+            display: flex;
+            flex-direction: row;
+            padding: 0px 10px 0px 10px;
+            flex-wrap: wrap;
+            overflow: hide;
+
+            .cardBeneficios {
+                width: 50%;
+                margin: 20px auto 20px;
+                color: rgb(154, 152, 152);
+
+                flex-direction: column;
+
+                h4 {
+                    font-weight: 700;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px)  {
+            .beneficios {
+                border-bottom: 15px solid rgb(40, 143, 222);
+    
+                h3 {
+                    padding: 10px 20px 30px 20px;
+                    color: rgb(40, 143, 222);
+                }
+    
+                .containerBeneficios {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 30px 50px 20px 50px;
+                    flex-wrap: wrap;
+                    overflow: hide;
+    
+                    .cardBeneficios {
+                        width: 33.33%;
+                        margin: 20px auto 20px;
+                        color: rgb(154, 152, 152);
+    
+                        flex-direction: column;
+    
+                        h4 {
+                            font-weight: 700;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }

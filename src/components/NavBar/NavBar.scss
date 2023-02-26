@@ -1,0 +1,180 @@
+.header {
+  background: white
+  
+  // linear-gradient(
+  //   90deg,
+  //   rgb(226, 226, 226) 21%,
+  //   rgba(255, 255, 255, 0.519) 73%,
+  //   rgb(167, 167, 167) 96%
+  // )
+  ;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.6em;
+
+  margin: auto;
+
+  width: 100%;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+
+  position: fixed;
+  top: 2em;
+
+  h1 {
+    display: none;
+  }
+
+  .topLogo {
+    height: 75px;
+    padding-left: 5em;
+    }
+
+    
+  ul {
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+
+    margin-right: 15em;
+    padding-top: 20px;
+
+
+    li {
+      margin: 0.4em 1.5em 0.4em 1.5em;
+      color: rgb(58, 58, 58);
+      transition: all 1s ease-in-out;
+      font-size: 1.5em;
+      white-space: nowrap;
+
+      
+      a {
+        color: rgb(58, 58, 58);
+        text-decoration: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      @media (min-width: 991px) {
+        &:hover {
+          transform: scale(1.1);
+          text-decoration-thickness: auto;
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+        }
+
+        a {
+          transition: all 0.1s ease-in-out;
+
+          &:hover {
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+    }
+
+    .dropDown {
+      position: relative;
+
+      .dropDownMenu {
+        position: absolute;
+        left: 0.6em;
+        top: calc(100% + 4em);
+        padding: 1em 0 2em 0;
+        margin: 0;
+
+        background-image: url(../../fondo3.png);
+        background-position: center;
+        background-size: cover;
+
+        border-radius: 1em;
+        border: 0.05em double rgb(105, 105, 105);
+
+        border-radius: 1em 1em 1em 1em;
+        box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+
+        a {
+          color: white;
+          text-shadow: 0em 0em 1em rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .topLogo {
+      padding: 0;
+      height: 8em;
+      margin: auto;
+
+    }
+
+    .burger {
+      display: block;
+      position: absolute;
+      right: 50px;
+      width: 20px;
+      height: 20px;
+      background: none;
+      border: none;
+
+      .icon {
+        font-size: 3.5em;
+        color: rgb(0, 0, 0);
+      }
+    }
+
+        nav
+    ul {
+      background-image: url(../../fondo3.png);
+      background-position: center;
+      position: fixed;
+      top: 12em;
+      // right: -10em;
+
+      flex-direction: column;
+      padding: 2em 0;
+      margin: 0;
+      width: 90%;
+
+    
+
+      border: 0.05em double rgb(105, 105, 105);
+
+      border-radius: 1em 1em 1em 1em;
+      box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+
+      transition: left 0.5s;
+
+      li {
+        color: rgb(0, 0, 0);
+        a {
+          color: rgb(0, 0, 0);
+        }
+      }
+
+      .dropDown {
+        position: relative;
+
+        .dropDownMenu {
+          position: absolute;
+          
+        }
+      }
+    }
+
+    .menuVisible {
+      top: 13em;
+      left: 2em;
+    }
+  }
+}
